@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './PersonCard.scss'
 
 export default function ({ id, name, occupation, sex, popularity, works, imagePath }) {
 

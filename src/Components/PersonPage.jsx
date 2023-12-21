@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import './PersonPage.scss'
+import { useParams } from 'react-router-dom'; 3
 import dayjs from 'dayjs';
 const apiKey = import.meta.env.VITE_API_KEY;
 
@@ -32,7 +33,7 @@ export default function () {
 
       {personData && (
 
-        <div>
+        <div className='personBox'>
           <h1>{personData.name}</h1>
           <p><strong>Sesso:</strong> {personData.gender === 2 ? 'Maschio' : 'Femmina'}</p>
           {personData.birthday && (

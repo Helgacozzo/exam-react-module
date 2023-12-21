@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './SearchPage.scss'
 import SearchBar from './SearchBar';
 import PersonCard from './PersonCard';
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -22,12 +23,12 @@ export default function () {
 
         <div>
 
-            <h1>Search People</h1>
+            <h1>Cerca i tuoi attori!</h1>
             <SearchBar onSearch={handleSearch} />
 
             {error && <div>{error}</div>}
 
-            {searchResults.length === 0 && !error && <div>No results found!</div>}
+            {searchResults.length === 0 && !error && <p className='notFoundResults'>Nessun risultato trovato!</p>}
 
             {searchResults.length !== 0 && !error && (
                 <div className="person-list">

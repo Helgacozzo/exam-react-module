@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import './NavBar.scss'
 
 export default function () {
   return (
@@ -11,7 +12,7 @@ export default function () {
           <NavLink className="link" to="/about">About</NavLink>
         </li>
         <li>
-          <NavLink className="link" to="/search">Search</NavLink>
+          <NavLink className="link" to="/search">Cerca</NavLink>
         </li>
       </menu>
     </nav>

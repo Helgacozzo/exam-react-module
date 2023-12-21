@@ -1,0 +1,29 @@
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+
+  input {
+    padding: 10px;
+    font-size: 16px;
+
+    &:focus {
+      outline: 2px solid;
+    }
+  }
+
+  button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+
+    &:hover {
+      color: greenyellow;
+    }
+  }
+}

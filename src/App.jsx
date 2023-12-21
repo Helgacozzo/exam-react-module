@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.scss'
 import { Routes, Route } from 'react-router-dom';
 import AboutPage from './Components/AboutPage';
 import HomePage from './Components/HomePage';
@@ -20,7 +21,7 @@ function App() {
         <Route path="person/:id" element={<PersonPage apiKey={apiKey} />} />
       </Routes>
     </>
-    
+
   );
 }
 

@@ -1,3 +1,5 @@
+import './AboutPage.scss'
+
 export default function () {
 
     return (
@@ -5,7 +7,7 @@ export default function () {
         <>
 
             <h1>About this site</h1>
-            <p> Il progetto consiste nella creazione di una React App utilizzando Vite e, opzionalmente SASS.
+            <p className="aboutP"> Il progetto consiste nella creazione di una React App utilizzando Vite e, opzionalmente SASS.
                 L'applicazione permetterà agli utenti di cercare personaggi influenti nel mondo del cinema.
                 Le informazioni sui personaggi saranno ottenute attraverso le API di The Movie Database (TMDB).
                 Gli utenti potranno inserire il nome di un attore o regista nella barra di ricerca,

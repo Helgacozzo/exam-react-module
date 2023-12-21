@@ -23,11 +23,11 @@ export default function HomePage() {
 
         <div>
 
-            <h1>Popular People</h1>
+            <h1>Attori popolari</h1>
 
             {error && <div>{error}</div>}
 
-            {!error && popularPeople.length === 0 && <div>Loading...</div>}
+            {!error && popularPeople.length === 0 && <p>Loading...</p>}
 
             {!error && popularPeople.length !== 0 && (
                 <div className="person-list">

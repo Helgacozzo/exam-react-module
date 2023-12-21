@@ -1,0 +1,40 @@
+nav {
+  padding: 3rem;
+  padding-left: 90px;
+
+  & menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+
+    & li {
+      margin-right: 50px;
+
+      & .link {
+        text-decoration: none;
+        color: #fff;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: greenyellow;
+          transition: width 0.3s;
+        }
+
+        &:hover {
+          color: white;
+
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
