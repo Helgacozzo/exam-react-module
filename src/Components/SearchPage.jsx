@@ -27,7 +27,7 @@ export default function () {
 
             {error && <div>{error}</div>}
 
-            {searchResults.length === 0 && !error && <div>No results found.</div>}
+            {searchResults.length === 0 && !error && <div>No results found!</div>}
 
             {searchResults.length !== 0 && !error && (
                 <div className="person-list">
@@ -49,5 +49,5 @@ export default function () {
         </div>
 
     );
-    
+
 };
