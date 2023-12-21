@@ -12,9 +12,9 @@ export default function ({ onSearch }) {
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
             />
-            <button onClick={() => onSearch(searchValue)}>Search</button>
+            <button onClick={() => onSearch(searchValue)}>Cerca</button>
         </div>
 
     );
-    
+
 };

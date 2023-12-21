@@ -6,7 +6,7 @@ const apiKey = import.meta.env.VITE_API_KEY;
 export default function () {
 
     const [searchResults, setSearchResults] = useState([]);
-    const [error, setError] = useState(null);
+    const [error, setError] = useState();
 
     const handleSearch = (searchValue) => {
         fetch(`https://api.themoviedb.org/3/search/person?api_key=${apiKey}&query=${searchValue}`)

@@ -1,12 +1,15 @@
+import { Link } from 'react-router-dom';
+
 export default function ({ id, name, occupation, sex, popularity, works, imagePath }) {
 
     return (
 
-        <>
+
+        <Link to={`person/${id}`}>
 
             <div className="person-card">
 
-                <img src={imagePath} alt={`${name} thumbnail`} className="person-image" />
+                <img src={imagePath} alt={name} className="person-image" />
 
                 <div className="person-details">
 
@@ -21,7 +24,7 @@ export default function ({ id, name, occupation, sex, popularity, works, imagePa
 
             </div>
 
-        </>
+        </Link>
 
     )
 

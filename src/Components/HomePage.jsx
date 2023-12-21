@@ -5,7 +5,7 @@ const apiKey = import.meta.env.VITE_API_KEY;
 export default function HomePage() {
 
     const [popularPeople, setPopularPeople] = useState([]);
-    const [error, setError] = useState(null);
+    const [error, setError] = useState();
 
     useEffect(() => {
 
