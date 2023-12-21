@@ -1,18 +1,34 @@
 import './App.css'
-import { Route, Routes } from 'react-router-dom';
+import { NavLink, Route, Routes } from 'react-router-dom';
 import AboutPage from './Components/AboutPage'
-// const apiKey = import.meta.env.VITE_API_KEY;
+import HomePage from './Components/HomePage';
 
 function App() {
 
   return (
+
     <>
+
+      <nav>
+        <menu>
+          <li>
+            <NavLink className="link" to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink className="link" to="/about">About</NavLink>
+          </li>
+        </menu>
+      </nav>
+
       <Routes>
-        <Route index element={<AboutPage/>} /> 
-        <Route path="/about" element={<AboutPage />} />
+        <Route index element={<HomePage />} />
+        <Route path="about" element={<AboutPage />} />
       </Routes>
+
     </>
+
   )
+
 }
 
 export default App
